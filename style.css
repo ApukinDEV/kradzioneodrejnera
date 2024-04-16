@@ -1,0 +1,115 @@
+/*Colors:
+#383D3B
+#EEE5E9
+#7C7C7C
+#44DAAA
+#7E1946
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#equation {
+    width: 100%;
+    height: 65vh;
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    font-size: 15vw;
+}
+
+#buttons {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    transition: 0.5s;
+}
+
+.helper {
+    position: relative;
+    height: 25vh;
+    padding-top: 20vh;
+}
+
+.button {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 12vh;
+    width: 8vw;
+    font-size: 3vw;
+    text-align: center;
+    line-height: 12vh;
+    transition: .5s;
+}
+
+.button:hover{
+    transform: translateY(-5vw);
+}
+
+#ans {
+    margin: auto;
+    width: 20%;
+    height: 20vh;
+    border: 0;
+    border-bottom: 5px solid black;
+    font-size: 10vw;
+    text-align: center;
+    animation: .5s;
+}
+
+#ans:focus{
+    border-bottom: 5px solid;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#lvl7 {
+    display: none;
+}
+
+#timer {
+    display: none;
+    position: absolute;
+    left: 43vw;
+    top: 1vh;
+    width: 14vw;
+    height: 6vh;
+    border: 3px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 3vw;
+}
+
+@keyframes wrongShake {
+    0% { transform: translateX(0); border-bottom: 5px solid black; color:black; }
+    20% { transform: translateX(-10px); border-bottom: 5px solid red; color: red;}
+    40% { transform: translateX(10px); border-bottom: 5px solid red; color: red;}
+    60% { transform: translateX(-10px); border-bottom: 5px solid red; color: red;}
+    80% { transform: translateX(10px); border-bottom: 5px solid red; color: red;}
+    100% { transform: translateX(0); border-bottom: 5px solid black; color: black;}
+}
+@keyframes rightBob {
+    0%, 100% { transform: translateY(0); border-bottom: 5px solid black; color:black; }
+    50% { transform: translateY(-5px); border-bottom: 5px solid greenyellow; background-color:greenyellow;}
+}

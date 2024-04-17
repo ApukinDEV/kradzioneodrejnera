@@ -10,9 +10,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Josefin Sans", sans-serif;
+    color: #EEE5E9;
 }
 
 body {
+    background-color: #7C7C7C;
     overflow: hidden;
 }
 
@@ -50,8 +52,10 @@ body {
 }
 
 .button {
-    background-color: white;
-    border: 2px solid black;
+    pointer:cursor;
+    background-color: #EEE5E9;
+    border: 2px solid #383D3B;
+    color:#383D3B;
     border-radius: 10px;
     height: 12vh;
     width: 8vw;
@@ -70,7 +74,8 @@ body {
     width: 20%;
     height: 20vh;
     border: 0;
-    border-bottom: 5px solid black;
+    background-color: #7C7C7C;
+    border-bottom: 5px solid #383D3B;
     font-size: 10vw;
     text-align: center;
     animation: .5s;
@@ -86,30 +91,38 @@ textarea:focus, input:focus{
 
 #lvl7 {
     display: none;
+    width:12vw;
+    height:12vw;
+}
+img{
+    width:12vw;
+    height:12vw;
 }
 
 #timer {
+    color:#383D3B;
+    background-color: #EEE5E9;
     display: none;
     position: absolute;
     left: 43vw;
     top: 1vh;
     width: 14vw;
     height: 6vh;
-    border: 3px solid black;
+    border: 3px solid #383D3B;
     border-radius: 5px;
     text-align: center;
     font-size: 3vw;
 }
 
 @keyframes wrongShake {
-    0% { transform: translateX(0); border-bottom: 5px solid black; color:black; }
-    20% { transform: translateX(-10px); border-bottom: 5px solid red; color: red;}
-    40% { transform: translateX(10px); border-bottom: 5px solid red; color: red;}
-    60% { transform: translateX(-10px); border-bottom: 5px solid red; color: red;}
-    80% { transform: translateX(10px); border-bottom: 5px solid red; color: red;}
-    100% { transform: translateX(0); border-bottom: 5px solid black; color: black;}
+    0% { transform: translateX(0); border-bottom: 5px solid #383D3B; color:#383D3B; }
+    20% { transform: translateX(-10px); border-bottom: 5px solid #7E1946; color: #7E1946;}
+    40% { transform: translateX(10px); border-bottom: 5px solid #7E1946; color: #7E1946;}
+    60% { transform: translateX(-10px); border-bottom: 5px solid #7E1946; color: #7E1946;}
+    80% { transform: translateX(10px); border-bottom: 5px solid #7E1946; color: #7E1946;}
+    100% { transform: translateX(0); border-bottom: 5px solid #383D3B; color: #383D3B;}
 }
 @keyframes rightBob {
-    0%, 100% { transform: translateY(0); border-bottom: 5px solid black; color:black; }
-    50% { transform: translateY(-5px); border-bottom: 5px solid greenyellow; background-color:greenyellow;}
+    0%, 100% { transform: translateY(0); border-bottom: 5px solid #383D3B; background-color: #7C7C7C; }
+    50% { transform: translateY(-5px); border-bottom: 5px solid #44DAAA; background-color:#44DAAA;}
 }
